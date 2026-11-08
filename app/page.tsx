@@ -5,14 +5,14 @@ import { ArrowRight, ArrowUpRight, Search, ShoppingBag, X, Plus, Minus, Heart, C
 
 type Product = { id: number; name: string; type: string; era: string; price: number; color: string; ink: string; design: string; bg: string };
 const products: Product[] = [
-  { id: 1, name: "The 6–7 Tee", type: "T-shirts", era: "Gen Alpha", price: 28, color: "#35352f", ink: "#efedda", design: "67", bg: "#e5e8dc" },
-  { id: 2, name: "Certified Brainrot Hoodie", type: "Hoodies", era: "Gen Z", price: 58, color: "#73764e", ink: "#e7eabf", design: "brainrot", bg: "#e3e3d7" },
-  { id: 3, name: "This Is Fine Mug", type: "Mugs", era: "Millennial", price: 18, color: "#eee9dc", ink: "#d75427", design: "fine", bg: "#eee0cc" },
-  { id: 4, name: "Delulu Is the Solulu Tee", type: "T-shirts", era: "Gen Z", price: 28, color: "#f0b8c3", ink: "#ad2b45", design: "delulu", bg: "#f0e4e2" },
-  { id: 5, name: "Verity Energy Tee", type: "T-shirts", era: "Gen Z", price: 30, color: "#ede9db", ink: "#2b4235", design: "verity", bg: "#e4e6da" },
-  { id: 6, name: "6–7 Braincell Hoodie", type: "Hoodies", era: "Gen Alpha", price: 58, color: "#393746", ink: "#ddd2f1", design: "67", bg: "#e6e1eb" },
-  { id: 7, name: "Error 404: Brain Not Found", type: "Mugs", era: "Millennial", price: 18, color: "#f0b94e", ink: "#30332a", design: "404", bg: "#eee6d3" },
-  { id: 8, name: "Touch Grass Club Tee", type: "T-shirts", era: "Gen Z", price: 28, color: "#e6e8c6", ink: "#36633a", design: "grass", bg: "#e0e8d9" },
+  { id: 1, name: "The 6–7 Tee", type: "T-shirts", era: "Gen Alpha", price: 28, color: "#35352f", ink: "#efedda", design: "67", bg: "#90e0ef" },
+  { id: 2, name: "Certified Brainrot Hoodie", type: "Hoodies", era: "Gen Z", price: 58, color: "#73764e", ink: "#e7eabf", design: "brainrot", bg: "#90e0ef" },
+  { id: 3, name: "This Is Fine Mug", type: "Mugs", era: "Millennial", price: 18, color: "#eee9dc", ink: "#d75427", design: "fine", bg: "#90e0ef" },
+  { id: 4, name: "Delulu Is the Solulu Tee", type: "T-shirts", era: "Gen Z", price: 28, color: "#f0b8c3", ink: "#ad2b45", design: "delulu", bg: "#90e0ef" },
+  { id: 5, name: "Verity Energy Tee", type: "T-shirts", era: "Gen Z", price: 30, color: "#ede9db", ink: "#2b4235", design: "verity", bg: "#90e0ef" },
+  { id: 6, name: "6–7 Braincell Hoodie", type: "Hoodies", era: "Gen Alpha", price: 58, color: "#393746", ink: "#ddd2f1", design: "67", bg: "#90e0ef" },
+  { id: 7, name: "Error 404: Brain Not Found", type: "Mugs", era: "Millennial", price: 18, color: "#f0b94e", ink: "#30332a", design: "404", bg: "#90e0ef" },
+  { id: 8, name: "Touch Grass Club Tee", type: "T-shirts", era: "Gen Z", price: 28, color: "#e6e8c6", ink: "#36633a", design: "grass", bg: "#90e0ef" },
 ];
 const money = (n: number) => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
 type CartItem = { product: number; size: string; quantity: number };
