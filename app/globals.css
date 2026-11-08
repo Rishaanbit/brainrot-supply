@@ -19,3 +19,5 @@
 
 /* Stock references for product categories */
 .stock-photo{position:relative;width:100%;height:100%;overflow:hidden;background:var(--paper)}.stock-photo img{display:block;width:100%;height:100%;object-fit:cover}.stock-shirt img{object-fit:cover;transform:scale(1.25)}.stock-hoodie img{object-position:center 30%}.stock-mug img{object-position:center 65%}.stock-label{position:absolute;left:10px;top:10px;font-size:8px;letter-spacing:.4px;background:var(--paper);color:var(--ink);padding:4px 6px}.favorite{background:var(--paper);border-radius:50%}.modal-art .stock-photo{height:490px}.modal-art .stock-photo img{object-fit:contain;transform:none}.cart-art .stock-label{display:none}.cart-art .stock-photo{height:100%}@media(max-width:760px){.modal-art .stock-photo{height:260px}.stock-label{font-size:7px;left:8px;top:8px}}
+
+.shop .shop-intro{margin-bottom:28px}.shop .shop-intro h1{max-width:760px;text-wrap:balance;font-size:clamp(28px,3.2vw,42px);line-height:1.18;letter-spacing:-1px}@media(max-width:760px){.shop .shop-intro{margin-bottom:24px}.shop .shop-intro h1{max-width:520px;letter-spacing:-.6px}}
