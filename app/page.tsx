@@ -18,9 +18,9 @@ const money = (n: number) => new Intl.NumberFormat("en-US", { style: "currency",
 type CartItem = { product: number; size: string; quantity: number };
 
 const stockPhotos: Record<string, {src:string; alt:string}> = {
-  "T-shirts": {src:"/images/stock-shirt.jpg",alt:"Plain black T-shirt on a white background"},
-  "Hoodies": {src:"/images/stock-hoodie.jpg",alt:"Plain brown pullover hoodie worn by a model"},
-  "Mugs": {src:"/images/stock-mug.jpg",alt:"White ceramic mug on a table"},
+  "T-shirts": {src:"images/stock-shirt.jpg",alt:"Plain black T-shirt on a white background"},
+  "Hoodies": {src:"images/stock-hoodie.jpg",alt:"Plain brown pullover hoodie worn by a model"},
+  "Mugs": {src:"images/stock-mug.jpg",alt:"White ceramic mug on a table"},
 };
 function ProductPlaceholder({ product }: { product: Product }) {
   const [failed, setFailed] = useState(false);
