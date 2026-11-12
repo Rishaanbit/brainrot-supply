@@ -132,3 +132,14 @@ summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-
   *,*::before,*::after{animation:none!important;transition:none!important}
   .product-card:hover .product-image{transform:none}
 }
+
+/* A paper-note banner with simple ink doodles. */
+.header{justify-content:space-between;background:transparent;border-bottom:0}
+.header-actions{margin-left:auto}
+.shop{padding-top:24px}
+.shop .shop-intro{background:#e8f9fd;border:1px solid #0077b633;border-radius:28px;padding:32px 36px;grid-template-columns:minmax(0,1fr) 230px;gap:28px;margin-bottom:28px;position:relative}
+.shop .shop-intro h1{font-size:clamp(30px,3.2vw,44px);line-height:1.4;max-width:760px}
+.shop-intro .highlight-word{background:none;color:var(--ink);border:0;box-shadow:none;transform:none;padding:0;margin:0;display:inline;text-decoration:underline;text-decoration-color:#00b4d8;text-decoration-thickness:5px;text-underline-offset:8px}
+.shop-doodle{width:230px}
+.preview-banner{background:#90e0ef55;color:var(--ink);font-size:12px;border-bottom:1px solid #0077b620;padding-block:9px}
+@media(max-width:760px){.shop .shop-intro{padding:26px 22px 14px;grid-template-columns:1fr;gap:8px;border-radius:22px}.shop .shop-intro h1{font-size:29px;line-height:1.45}.shop-doodle{width:140px;margin:0;justify-self:end}.shop{padding-top:10px}.preview-banner{font-size:11px}.header{padding-block:12px}.shop-intro .highlight-word{text-decoration-thickness:4px;text-underline-offset:6px}}
