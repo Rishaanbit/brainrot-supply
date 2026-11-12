@@ -39,7 +39,7 @@ function ProductImage({ product }: { product: Product }) {
   const [ready, setReady] = useState(false);
   const photo = product.mockup ? {src: `images/mockups/${encodeURIComponent(product.mockup.replace(/\.png$/, "-cutout.webp"))}`, alt: `${product.colorName || "Black"} ${product.name} design mockup`} : stockPhotos[product.type];
   useEffect(() => { setFailed(false); setReady(false); }, [photo.src]);
-  return <div className={`stock-photo ${ready ? "image-ready" : ""} ${product.mockup ? "design-mockup" : ""} stock-${product.type === "T-shirts" ? "shirt" : product.type === "Hoodies" ? "hoodie" : "mug"}`}>
+  return <div className={`stock-photo mockup-${product.id} ${ready ? "image-ready" : ""} ${product.mockup ? "design-mockup" : ""} stock-${product.type === "T-shirts" ? "shirt" : product.type === "Hoodies" ? "hoodie" : "mug"}`}>
     {failed ? <div className="product-placeholder"><ImageIcon size={30} aria-hidden="true"/><span>Image unavailable</span></div> : <img src={photo.src} alt={product.mockup ? photo.alt : `${photo.alt}; stock reference for ${product.name}`} loading="lazy" decoding="async" onLoad={() => setReady(true)} onError={() => setFailed(true)}/>}
     <span className="stock-label">{product.mockup ? "Design mockup" : "Stock photo"}</span>
   </div>;
