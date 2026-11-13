@@ -1,22 +1,19 @@
-export default function ShopHeroArt() {
-  return <svg className="shop-hero-art" viewBox="0 0 320 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-    <g stroke="#03045e" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-      <g className="art-face">
-        <path d="M177 83c43-15 91 9 89 59s-43 75-82 57-48-61-26-91c5-8 11-17 19-25Z" fill="#90e0ef"/>
-        <path d="m181 119 10 12m1-14-12 15m42-10 10 13m1-13-12 12m-39 21c10 26 34 29 50 6"/>
-      </g>
-      <g className="art-token art-token-shirt">
-        <path d="m29 48 111-15 17 88-110 19Z" fill="#caf0f8"/>
-        <path d="m65 37 33-5 4 19-33 6" fill="#00b4d8" stroke="none"/>
-        <path d="M88 65c-28-7-34 42-11 38 17-4 7-25-9-13m34-29 26-4-14 44" strokeWidth="6"/>
-        <path d="m53 124 83-13" stroke="#0077b6" strokeWidth="2"/>
-      </g>
-      <path d="M54 174c-12 30 18 60 62 40m-13-7 16 5-7 14" stroke="#0077b6"/>
-      <g className="art-spark">
-        <path d="m254 40 4 12 13 3-12 5-2 13-5-12-13-3 12-5Z" fill="#00b4d8"/>
-        <path d="m286 190 2 12 13 3-13 3-3 12-2-12-12-4 12-2Z" stroke="#0077b6" strokeWidth="2"/>
-        <path d="m152 22 4-10m14 17 7-4M24 148l-9 5m18 9-3 10" stroke="#0077b6"/>
-      </g>
-    </g>
-  </svg>;
-}
+export default function ShopHeroArt(){return <svg className="shop-hero-art" viewBox="0 0 320 260" fill="none" aria-hidden="true">
+<g stroke="#03045e" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+<path d="M38 25h238l-3 212H36Z" fill="#f5fcff"/><path d="M58 25v212" stroke="#00b4d8" strokeWidth="1"/>
+{[60,90,120,150,180,210].map(y=><path key={y} d={`M39 ${y}h232`} stroke="#90e0ef" strokeWidth="1"/>)}
+{[45,80,115,150,185,220].map(y=><path key={y} d={`M30 ${y}q-15-12 0-16h14`} stroke="#0077b6"/>)}
+<g className="art-face">
+<path d="M109 210c-12-29-4-68 11-85l88-7c24 27 24 63 13 91Z" fill="#90e0ef"/>
+<path d="M112 85c-18-29 11-40 22-14m55-1c12-31 39-13 24 12" fill="#90e0ef"/>
+<path d="M112 80c15-22 84-24 100 3l11 44c5 24-22 39-59 37-40-2-64-16-59-39Z" fill="#caf0f8"/>
+<path d="M119 84q3-9 9-7m72 0q7-2 7 8" stroke="#0077b6"/>
+<path d="M124 110h20m35 0h20"/><ellipse cx="136" cy="114" rx="3" ry="5" fill="#03045e"/><ellipse cx="187" cy="114" rx="3" ry="5" fill="#03045e"/>
+<path d="M149 131q13-9 25 0l-12 8Z" fill="#0077b6"/><path d="M162 139v8m-12-2q12 11 23-1"/>
+<path d="m117 182 16 18m69-18-13 18"/>
+<path d="M140 176h46v36h-46Z" fill="#fff"/><path d="M186 181h8q16 12 0 23h-8" fill="#fff"/><path d="m155 188 4 4m12-4-4 4m-12 9q8 7 15 0" strokeWidth="2"/>
+<path d="M120 215h22m45 0h25"/>
+</g>
+<g className="art-spark"><path d="m240 65 4 10 11 3-11 4-4 11-3-11-10-4 10-3Z" fill="#00b4d8"/><path d="m81 149 3 8 9 3-9 3-3 9-3-9-9-3 9-3Z" fill="#90e0ef"/></g>
+<path d="M239 112h17l-15 17h18m-13 10h11l-10 12h11" stroke="#0077b6" strokeWidth="2"/>
+</g></svg>}

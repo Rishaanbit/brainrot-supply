@@ -15,7 +15,6 @@ const products: Product[] = [
   { id: 5, meme: "Verity", name: "Verity Energy Tee", type: "T-shirts", era: "Gen Z", price: 30, color: "#ede9db", design: "verity", bg: "#90e0ef" },
   { id: 6, meme: "67", name: "6–7 Braincell Hoodie", type: "Hoodies", era: "Gen Alpha", price: 58, color: "#393746", design: "67", bg: "#90e0ef" },
   { id: 7, meme: "Millennial classics", name: "Error 404: Brain Not Found", type: "Mugs", era: "Millennial", price: 18, color: "#ffffff", design: "404", bg: "#90e0ef", mockup: "error-404-mug.webp", colorName: "White" },
-  { id: 8, meme: "Touch grass", name: "Touch Grass Tee", type: "T-shirts", era: "Gen Z", price: 28, color: "#000000", design: "grass", bg: "#90e0ef", mockup: "touch-grass-tee.webp" },
   {"id":9,"name":"Skibidi Toilet Tee","meme":"Skibidi","mockup":"Skibidi Toilet Tee.png","type":"T-shirts","era":"Gen Alpha","price":28,"color":"#000000","design":"Skibidi Toilet Tee","bg":"#90e0ef"},
   {"id":10,"name":"Skibidi Tee","meme":"Skibidi","mockup":"Skibidi Tee.png","type":"T-shirts","era":"Gen Alpha","price":28,"color":"#000000","design":"Skibidi Tee","bg":"#90e0ef"},
   {"id":11,"name":"This Is Fine Tee","meme":"Millennial classics","mockup":"This is Fine Tee.png","type":"T-shirts","era":"Millennial","price":28,"color":"#000000","design":"This Is Fine Tee","bg":"#90e0ef"},
@@ -37,7 +36,7 @@ const stockPhotos: Record<string, {src:string; alt:string}> = {
 function ProductImage({ product }: { product: Product }) {
   const [failed, setFailed] = useState(false);
   const [ready, setReady] = useState(false);
-  const photo = product.mockup ? {src: `images/mockups/${encodeURIComponent(product.mockup.replace(/\.png$/, "-cutout.webp"))}`, alt: `${product.colorName || "Black"} ${product.name} design mockup`} : stockPhotos[product.type];
+  const photo = product.mockup ? {src: `images/mockups/normalized/${encodeURIComponent(product.mockup.replace(/\.png$/, "-cutout.webp"))}`, alt: `${product.colorName || "Black"} ${product.name} design mockup`} : stockPhotos[product.type];
   useEffect(() => { setFailed(false); setReady(false); }, [photo.src]);
   return <div className={`stock-photo mockup-${product.id} ${ready ? "image-ready" : ""} ${product.mockup ? "design-mockup" : ""} stock-${product.type === "T-shirts" ? "shirt" : product.type === "Hoodies" ? "hoodie" : "mug"}`}>
     {failed ? <div className="product-placeholder"><ImageIcon size={30} aria-hidden="true"/><span>Image unavailable</span></div> : <img src={photo.src} alt={product.mockup ? photo.alt : `${photo.alt}; stock reference for ${product.name}`} loading="lazy" decoding="async" onLoad={() => setReady(true)} onError={() => setFailed(true)}/>}

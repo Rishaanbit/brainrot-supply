@@ -153,3 +153,11 @@ summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-
 .cart-art:has(.mockup-7){aspect-ratio:1414/1000}
 .mockup-7.design-mockup img{object-fit:cover;object-position:center;transform:none}
 .mockup-15.design-mockup img{object-fit:contain;object-position:center;transform:none}
+
+/* Shared canvas and subject scale across every supplied mockup. */
+.product-card:has(.design-mockup) .product-image,
+.modal-art .design-mockup,
+.cart-art:has(.design-mockup){aspect-ratio:1}
+.design-mockup{background:#eaf8fc}
+.stock-photo.design-mockup img{object-fit:contain;object-position:center;transform:none}
+.shop .shop-intro{background-color:#effaff;background-image:linear-gradient(#0077b60b 1px,transparent 1px),linear-gradient(90deg,#0077b60b 1px,transparent 1px);background-size:24px 24px}
