@@ -161,3 +161,10 @@ summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-
 .design-mockup{background:#eaf8fc}
 .stock-photo.design-mockup img{object-fit:contain;object-position:center;transform:none}
 .shop .shop-intro{background-color:#effaff;background-image:linear-gradient(#0077b60b 1px,transparent 1px),linear-gradient(90deg,#0077b60b 1px,transparent 1px);background-size:24px 24px}
+
+/* A full-width comic scene, with the heading kept readable above it. */
+.shop .shop-intro{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0;overflow:hidden;background:#effaff;border-radius:22px}
+.shop .shop-intro h1{font-size:clamp(25px,2.6vw,36px);line-height:1.4;max-width:none;width:auto;padding:24px 30px;margin:0}
+.shop .shop-intro .shop-doodle{width:100%;margin:0;align-self:stretch}
+.shop-comic-art{width:100%;height:auto;display:block;border-top:1px solid #0077b633}
+@media(max-width:760px){.shop .shop-intro h1{padding:20px;font-size:26px}.shop .shop-intro{border-radius:18px}.shop .shop-intro .shop-doodle{width:100%;margin:0}}
