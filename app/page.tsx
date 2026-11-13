@@ -14,7 +14,7 @@ const products: Product[] = [
   { id: 4, meme: "Delulu", name: "Delulu Is the Solulu Tee", type: "T-shirts", era: "Gen Z", price: 28, color: "#f0b8c3", design: "delulu", bg: "#90e0ef" },
   { id: 5, meme: "Verity", name: "Verity Energy Tee", type: "T-shirts", era: "Gen Z", price: 30, color: "#ede9db", design: "verity", bg: "#90e0ef" },
   { id: 6, meme: "67", name: "6–7 Braincell Hoodie", type: "Hoodies", era: "Gen Alpha", price: 58, color: "#393746", design: "67", bg: "#90e0ef" },
-  { id: 7, meme: "Millennial classics", name: "Error 404: Brain Not Found", type: "Mugs", era: "Millennial", price: 18, color: "#ffffff", design: "404", bg: "#90e0ef", mockup: "error-404-mug.webp", colorName: "White" },
+  { id: 7, meme: "Millennial classics", name: "Error 404: Brain Not Found", type: "Mugs", era: "Millennial", price: 18, color: "#ffffff", design: "404", bg: "#90e0ef", mockup: "error-404-mug-refined.webp", colorName: "White" },
   {"id":9,"name":"Skibidi Toilet Tee","meme":"Skibidi","mockup":"Skibidi Toilet Tee.png","type":"T-shirts","era":"Gen Alpha","price":28,"color":"#000000","design":"Skibidi Toilet Tee","bg":"#90e0ef"},
   {"id":10,"name":"Skibidi Tee","meme":"Skibidi","mockup":"Skibidi Tee.png","type":"T-shirts","era":"Gen Alpha","price":28,"color":"#000000","design":"Skibidi Tee","bg":"#90e0ef"},
   {"id":11,"name":"This Is Fine Tee","meme":"Millennial classics","mockup":"This is Fine Tee.png","type":"T-shirts","era":"Millennial","price":28,"color":"#000000","design":"This Is Fine Tee","bg":"#90e0ef"},

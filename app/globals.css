@@ -168,3 +168,6 @@ summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-
 .shop .shop-intro .shop-doodle{width:100%;margin:0;align-self:stretch}
 .shop-comic-art{width:100%;height:auto;display:block;border-top:1px solid #0077b633}
 @media(max-width:760px){.shop .shop-intro h1{padding:20px;font-size:26px}.shop .shop-intro{border-radius:18px}.shop .shop-intro .shop-doodle{width:100%;margin:0}}
+
+/* A little extra contrast behind the white Capybara tee. */
+.design-mockup.mockup-16{background:#cde7ee}
